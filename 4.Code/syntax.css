@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Second Animation*/
+h2{
+    position: relative;
+    font-size: 170px;
+    font-family: Arial, Helvetica,
+     sans-serif;
+    border: 5px solid #2ae820;
+}
+h2::before{
+    content: "ATOVRA";
+    width: 100%;
+    color: #2ae820;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: .4rem solid;
+    animation: slidee 4s linear 
+     infinite;
+    overflow: hidden;
+}
+@keyframes slidee{
+    0%{width: 0%;}
+    50%{width: 100%;}
+    100%{width: 0%;}
+}
+
+/* First Animation */
+h1{
+    position: relative;
+    font-size: 170px;font-family: Arial, Helvetica, sans-serif;
+    border: 5px solid #2ae820;
+}
+h1::before{
+    content: "ATOVRA";
+    width: 100%;
+    color: #2ae820;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: .4rem solid;
+    animation: slide 3s linear infinite;
+    overflow: hidden;
+}
+@keyframes slide{
+    0%{height: 0%;}
+    50%{height: 100%;}
+    100%{height: 0%;}
+}

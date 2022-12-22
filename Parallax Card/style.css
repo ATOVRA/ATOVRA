@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 320px;
+    border-radius: 16px;
+    background-image: url("https://render.fineartamerica.com/images/rendered/default/greeting-card/images/artworkimages/medium/2/space-galaxy-background-sololos.jpg?&targetx=-111&targety=0&imagewidth=922&imageheight=499&modelwidth=700&modelheight=500&backgroundcolor=0D142E&orientation=0");
+    background-size: 100%;
+    transition: 0.5s;
+    margin-top: 50px;
+}
+.card h1{
+    font-size: 38px;
+    color: aliceblue;
+}
+.card button{
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 0;
+    background-color: #221e6f;
+    color: #f9f9f9;
+    font-family: inherit;
+}
